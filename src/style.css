@@ -1,1 +1,33 @@
+@font-face {
+	font-family: 'Caveat';
+	src: url(./Caveat-VariableFont_wght.ttf);
+}
+#content {
+	font-family: Caveat;
+	display: grid;
+	grid-template-columns: auto, auto, auto;
+	grid-template-rows: auto, auto, auto;
+	grid-template-areas:
+		'. header .'
+		'. main .'
+		'. footer .';
+	justify-content: center;
+}
 
+header {
+	grid-area: header;
+	text-align: center;
+	background-color: rgba(255, 0, 0, 0.219);
+}
+
+.tab {
+	display: inline;
+}
+
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}
