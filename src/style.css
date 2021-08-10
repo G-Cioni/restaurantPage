@@ -5,27 +5,35 @@
 #content {
 	font-family: Caveat;
 	display: grid;
-	grid-template-columns: auto, auto, auto;
-	grid-template-rows: auto, auto, auto;
+	grid-template-columns: 0.5fr, 1fr, 0.5fr;
+	grid-template-rows: 0.5fr, 1fr, 0.5fr;
 	grid-template-areas:
 		'. header .'
 		'. main .'
 		'. footer .';
 	justify-content: center;
+	width: 100vw;
+	height: 100vh;
 }
 
 header {
 	grid-area: header;
 	text-align: center;
 	background-color: rgba(255, 0, 0, 0.219);
+	height: max-content;
 }
 
 .tab {
 	display: inline;
+	background-color: rgba(255, 217, 0, 0.219);
+	margin: 0rem 0.2rem;
+	padding: 0rem 0.3rem;
 }
 
 main {
 	grid-area: main;
+	background-color: rgba(247, 210, 0, 0.356);
+	padding: 1rem;
 }
 
 footer {
