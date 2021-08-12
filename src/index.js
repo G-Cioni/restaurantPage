@@ -1,2 +1,5 @@
 import './style.css';
-console.log('this is a test!!!');
+import { htmlSkeleton } from './htmlSkeleton';
+import { createHome } from './home';
+htmlSkeleton();
+createHome();
