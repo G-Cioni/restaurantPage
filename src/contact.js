@@ -1,10 +1,12 @@
 import { htmlSkeleton } from './htmlSkeleton';
 import { clearHtml } from './clearHtml';
-// import map from './contact.jpg';
+import map from './contact.jpg';
 
 export function createContact() {
 	clearHtml();
 	htmlSkeleton();
+	const myMap = new Image();
+	myMap.src = map;
 
 	const main = document.querySelector('main');
 	const title = document.createElement('h1');
@@ -25,4 +27,6 @@ export function createContact() {
 	address.textContent =
 		'Address: 57 Church St, New York, NY 10007, United States';
 	contact.appendChild(address);
+	myMap.id = 'map';
+	contact.appendChild(myMap);
 }

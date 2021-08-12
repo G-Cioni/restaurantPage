@@ -152,6 +152,9 @@ footer {
 	text-align: left;
 }
 
+#map {
+	max-width: 22em;
+}
 /* Media queries */
 
 @media screen and (max-height: 865px) {
