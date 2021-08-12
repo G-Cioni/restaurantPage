@@ -171,8 +171,8 @@ footer {
 	}
 }
 @media screen and (max-width: 525px) {
-	#content {
-		font-size: smaller;
+	main {
+		padding: 0;
 	}
 	h2 {
 		font-size: x-large;
