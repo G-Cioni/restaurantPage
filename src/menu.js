@@ -5,10 +5,13 @@ export function createMenu() {
 	htmlSkeleton();
 	const footer = document.querySelector('footer');
 	footer.style.marginTop = '3em';
+
 	const main = document.querySelector('main');
-	const menu = document.createElement('h1');
-	menu.textContent = 'Menu';
-	main.appendChild(menu);
+	const title = document.createElement('h1');
+	title.id = 'title';
+	title.textContent = 'Menu';
+	main.appendChild(title);
+
 	subMenuFactory('Wine');
 	menuItemFactory('Wine', 'Chianti', 'Red wine from Tuscany', '7€');
 	menuItemFactory(

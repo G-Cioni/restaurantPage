@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
@@ -7,6 +8,11 @@ module.exports = {
 	devServer: {
 		contentBase: './dist',
 	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			title: 'Output Management',
+		}),
+	],
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist'),
@@ -19,6 +25,10 @@ module.exports = {
 			},
 			{
 				test: /\.(woff|woff2|eot|ttf|otf)$/i,
+				type: 'asset/resource',
+			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
 				type: 'asset/resource',
 			},
 		],

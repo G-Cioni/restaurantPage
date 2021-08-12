@@ -1,8 +1,8 @@
 import { htmlSkeleton } from './htmlSkeleton';
 import { clearHtml } from './clearHtml';
+import { createMenu } from './menu';
 
 export function createHome() {
-	console.log('create home');
 	clearHtml();
 	htmlSkeleton();
 	const now = new Date();
@@ -50,5 +50,6 @@ export function createHome() {
 
 	const menuBtn = document.createElement('button');
 	menuBtn.textContent = 'Menu';
+	menuBtn.addEventListener('click', () => createMenu());
 	main.appendChild(menuBtn);
 }

@@ -3,4 +3,23 @@ import { clearHtml } from './clearHtml';
 export function createContact() {
 	clearHtml();
 	htmlSkeleton();
+	const main = document.querySelector('main');
+	const title = document.createElement('h1');
+	title.textContent = 'Contact us';
+	title.id = 'title';
+	main.appendChild(title);
+
+	const contact = document.createElement('div');
+	contact.id = 'contact';
+	main.appendChild(contact);
+	const phone = document.createElement('p');
+	phone.textContent = 'Phone: +1 212-123-0123';
+	contact.appendChild(phone);
+	const email = document.createElement('p');
+	email.textContent = 'Email: info@drinks.com';
+	contact.appendChild(email);
+	const address = document.createElement('p');
+	address.textContent =
+		'Address: 57 Church St, New York, NY 10007, United States';
+	contact.appendChild(address);
 }

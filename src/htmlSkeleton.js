@@ -1,9 +1,21 @@
 import { createHome } from './home';
 import { createMenu } from './menu';
 import { createContact } from './contact';
+// import background from './background.jpg';
 
+// export function setBackground() {
+// 	const content = document.getElementById(content);
+// 	const myBackground = new Image();
+// 	myBackground.src = background;
+// 	content.appendChild(myBackground);
+// }
+
+export function contentDiv() {
+	const content = document.createElement('div');
+	content.id = 'content';
+	document.querySelector('body').appendChild(content);
+}
 export function htmlSkeleton() {
-	console.log('html skeleton');
 	const content = document.getElementById('content');
 
 	const header = document.createElement('header');
