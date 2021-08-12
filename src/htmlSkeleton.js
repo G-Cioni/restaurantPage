@@ -3,6 +3,7 @@ import { createMenu } from './menu';
 import { createContact } from './contact';
 
 export function htmlSkeleton() {
+	console.log('html skeleton');
 	const content = document.getElementById('content');
 
 	const header = document.createElement('header');
@@ -21,13 +22,13 @@ export function htmlSkeleton() {
 	const menuTab = document.createElement('button');
 	menuTab.classList.add('tab');
 	menuTab.textContent = 'Menu';
-	homeTab.addEventListener('click', () => createMenu());
+	menuTab.addEventListener('click', () => createMenu());
 	header.appendChild(menuTab);
 
 	const contactTab = document.createElement('button');
 	contactTab.classList.add('tab');
 	contactTab.textContent = 'Contact';
-	homeTab.addEventListener('click', () => createContact());
+	contactTab.addEventListener('click', () => createContact());
 	header.appendChild(contactTab);
 
 	const main = document.createElement('main');
