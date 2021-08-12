@@ -5,10 +5,10 @@
 
 body {
 	background-color: rgb(32, 32, 32);
+	color: rgba(253, 190, 54, 0.89);
 }
 #content {
 	font-family: Caveat;
-	color: rgba(253, 167, 54, 0.89);
 	display: grid;
 	grid-template-areas:
 		'header header header'
@@ -38,7 +38,9 @@ button {
 	border: 1px solid rgba(255, 255, 255, 0.082);
 	border-radius: 10px;
 	font-size: 1.2em;
-	color: rgba(253, 167, 54, 0.89);
+	color: rgba(253, 190, 54, 0.89);
+
+	/* color: rgba(253, 167, 54, 0.89); */
 	padding: 0em 0.3em;
 }
 
@@ -51,7 +53,6 @@ header {
 	background-color: rgba(31, 31, 31, 0.87);
 	width: 100vw;
 	height: max-content;
-	color: rgba(253, 167, 54, 0.89);
 	border: 1px solid rgba(255, 255, 255, 0.418);
 }
 
@@ -77,6 +78,8 @@ main {
 }
 
 #open {
+	color: rgba(253, 190, 54, 0.89);
+
 	padding-top: 1em;
 	border: 1px solid rgba(255, 255, 255, 0.418);
 	border-radius: 10px;
@@ -86,6 +89,7 @@ main {
 #openHours {
 	margin: 0;
 }
+
 footer {
 	grid-area: footer;
 	background-color: rgba(31, 31, 31, 0.87);
@@ -94,4 +98,15 @@ footer {
 	text-align: center;
 	margin-top: auto;
 	border: 1px solid rgba(255, 255, 255, 0.418);
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: rgba(253, 190, 54, 0.89);
+	background: rgba(235, 140, 31, 0.075);
+}
+
+::selection {
+	color: rgba(253, 190, 54, 0.89);
+	background: rgba(235, 140, 31, 0.075);
 }
