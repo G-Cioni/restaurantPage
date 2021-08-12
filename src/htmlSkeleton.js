@@ -5,7 +5,7 @@ export function htmlSkeleton() {
 	content.appendChild(header);
 
 	const restaurantName = document.createElement('h1');
-	restaurantName.textContent = 'ĐЯ1NK$';
+	restaurantName.textContent = 'ĐЯ/NK$';
 	header.appendChild(restaurantName);
 
 	const homeTab = document.createElement('button');

@@ -82,6 +82,10 @@ main {
 	border-radius: 10px;
 	margin-bottom: 1.5em;
 }
+
+#openHours {
+	margin: 0;
+}
 footer {
 	grid-area: footer;
 	background-color: rgba(31, 31, 31, 0.87);

@@ -19,6 +19,7 @@
         </footer> */
 
 export function createHome() {
+	const now = new Date();
 	const main = document.querySelector('main');
 
 	const welcome = document.createElement('h3');
@@ -27,7 +28,7 @@ export function createHome() {
 	main.appendChild(welcome);
 
 	const restaurantName = document.createElement('h1');
-	restaurantName.textContent = 'ĐЯ1NK$';
+	restaurantName.textContent = 'ĐЯ/NK$';
 	main.appendChild(restaurantName);
 
 	const open = document.createElement('div');
@@ -35,11 +36,21 @@ export function createHome() {
 	main.appendChild(open);
 
 	const openHours = document.createElement('h4');
-	open.textContent = 'Opening Hours';
+	openHours.id = 'openHours';
+	if (now.getDay() > 6) {
+		now.getHours() < 19
+			? (openHours.textContent = 'ĐЯ/NK$ / CLOSED')
+			: (openHours.textContent = 'ĐЯ/NK$ / OPEN');
+	} else {
+		now.getHours() < 13
+			? (openHours.textContent = 'ĐЯ/NK$ / CLOSED')
+			: (openHours.textContent = 'ĐЯ/NK$ / OPEN');
+	}
+
 	open.appendChild(openHours);
 
 	const hours1 = document.createElement('h3');
-	hours1.textContent = 'Mon - Fri: 19:00 - 23:00';
+	hours1.textContent = 'Mon - Fri: 19:00 - 24:00';
 	open.appendChild(hours1);
 
 	const hours2 = document.createElement('h3');
