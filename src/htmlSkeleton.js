@@ -1,3 +1,7 @@
+import { createHome } from './home';
+import { createMenu } from './menu';
+import { createContact } from './contact';
+
 export function htmlSkeleton() {
 	const content = document.getElementById('content');
 
@@ -11,16 +15,19 @@ export function htmlSkeleton() {
 	const homeTab = document.createElement('button');
 	homeTab.classList.add('tab');
 	homeTab.textContent = 'Home';
+	homeTab.addEventListener('click', () => createHome());
 	header.appendChild(homeTab);
 
 	const menuTab = document.createElement('button');
 	menuTab.classList.add('tab');
 	menuTab.textContent = 'Menu';
+	homeTab.addEventListener('click', () => createMenu());
 	header.appendChild(menuTab);
 
 	const contactTab = document.createElement('button');
 	contactTab.classList.add('tab');
 	contactTab.textContent = 'Contact';
+	homeTab.addEventListener('click', () => createContact());
 	header.appendChild(contactTab);
 
 	const main = document.createElement('main');

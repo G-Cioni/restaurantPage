@@ -1,24 +1,9 @@
-/* <div id="content">
-        <header>
-            <h1>Restaurant Name</h1>
-            <button class="tab">Home</button>
-            <button class="tab">Menu</button>
-            <button class="tab">Contact</button>
-        </header>
-        <main>
-            <h2>Welcome to</h2>
-            <h1>Restaurant Name</h1>
-            <h3>Opening Hours</h3>
-            <div class="open-hours">Mon - Fri: 19:00 - 23:00</div>
-            <div class="open-hours">Sat - Sun: 13:00 - 24:00</div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit totam praesentium eos nostrum labore voluptate ipsa voluptatem magni vero. Corrupti, optio neque repellat itaque corporis temporibus quidem quasi dolores repudiandae?</p>
-            <button class="button" id="home-menu-btn">Menu</button>
-            </main>
-        <footer>
-            Copyright © 2021 gianlucacioni
-        </footer> */
+import { htmlSkeleton } from './htmlSkeleton';
+import { clearHtml } from './clearHtml';
 
 export function createHome() {
+	clearHtml();
+	htmlSkeleton();
 	const now = new Date();
 	const main = document.querySelector('main');
 
@@ -37,12 +22,12 @@ export function createHome() {
 
 	const openHours = document.createElement('h4');
 	openHours.id = 'openHours';
-	if (now.getDay() > 6) {
-		now.getHours() < 19
+	if (now.getDay() > 5) {
+		now.getHours() < 13
 			? (openHours.textContent = 'ĐЯ/NK$ / CLOSED')
 			: (openHours.textContent = 'ĐЯ/NK$ / OPEN');
 	} else {
-		now.getHours() < 13
+		now.getHours() < 19
 			? (openHours.textContent = 'ĐЯ/NK$ / CLOSED')
 			: (openHours.textContent = 'ĐЯ/NK$ / OPEN');
 	}
@@ -66,3 +51,23 @@ export function createHome() {
 	menuBtn.textContent = 'Menu';
 	main.appendChild(menuBtn);
 }
+
+/* <div id="content">
+        <header>
+            <h1>Restaurant Name</h1>
+            <button class="tab">Home</button>
+            <button class="tab">Menu</button>
+            <button class="tab">Contact</button>
+        </header>
+        <main>
+            <h2>Welcome to</h2>
+            <h1>Restaurant Name</h1>
+            <h3>Opening Hours</h3>
+            <div class="open-hours">Mon - Fri: 19:00 - 23:00</div>
+            <div class="open-hours">Sat - Sun: 13:00 - 24:00</div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit totam praesentium eos nostrum labore voluptate ipsa voluptatem magni vero. Corrupti, optio neque repellat itaque corporis temporibus quidem quasi dolores repudiandae?</p>
+            <button class="button" id="home-menu-btn">Menu</button>
+            </main>
+        <footer>
+            Copyright © 2021 gianlucacioni
+        </footer> */
