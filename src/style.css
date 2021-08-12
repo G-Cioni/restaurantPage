@@ -126,7 +126,7 @@ footer {
 }
 
 .menu-title {
-	margin: 0.5em auto 0 auto;
+	margin: 1em auto 0.5em auto;
 	border-bottom: 2px solid rgba(255, 255, 255, 0.418);
 	width: max-content;
 }
@@ -153,7 +153,9 @@ footer {
 }
 
 #map {
+	margin-top: 0.7em;
 	max-width: 22em;
+	border-radius: 10px;
 }
 /* Media queries */
 

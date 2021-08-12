@@ -45,7 +45,7 @@ export function createHome() {
 
 	const paragraph = document.createElement('p');
 	paragraph.textContent =
-		'When it comes to the best rooftop bars in NYC, ĐЯ/NK$ is a place you have to visit to enjoy a drink. On top of the an incredible Hotel, this gorgeous bar offers stunning views of Manhattan. ĐЯ/NK$ also gets consistently recognized as one of the best rooftop bars in the world.';
+		'When it comes to the best rooftop bars in NYC, ĐЯ/NK$ is a place you have to visit to enjoy a drink. On top of the an incredible Hotel, this gorgeous bar offers stunning views of Manhattan. We consistently are recognized as one of the best rooftop bars in the world.';
 	main.appendChild(paragraph);
 
 	const menuBtn = document.createElement('button');
