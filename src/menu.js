@@ -105,6 +105,7 @@ function menuItemFactory(subMenu, item, description, price) {
 	const descDiv = document.createElement('p');
 	descDiv.textContent = description;
 	descDiv.classList.add('menu-card-item');
+	descDiv.classList.add('description');
 	card.appendChild(descDiv);
 
 	const priceDiv = document.createElement('h3');
