@@ -13,32 +13,82 @@ export function createMenu() {
 	main.appendChild(title);
 
 	subMenuFactory('Wine');
-	menuItemFactory('Wine', 'Chianti', 'Red wine from Tuscany', '7€');
 	menuItemFactory(
 		'Wine',
-		'Morellino di Scanzano',
-		'Red wine from Tuscany',
-		'8€'
+		'Ankida Ridge Vineyards Pinot Noir | 2017',
+		'The palate is beautifully grippy and intense, and the finish is unbelievably bright and refreshing.',
+		'11$'
 	);
 	menuItemFactory(
 		'Wine',
-		'Canonau',
-		'Red wine from SardegniaRed wine from SardegniaRed wine from SardegniaRed wine from SardegniaRed wine from Sardegnia',
-		'7€'
+		'Chene Bleu "Abelard" 2012',
+		'Aromas of cooking herbs like rosemary and oregano, as well as brambly berries, give this wine an autumnal feel',
+		'16$'
 	);
-	menuItemFactory('Wine', 'Shiraz', 'Red wine', '7€');
+	menuItemFactory(
+		'Wine',
+		'La Cana Navia Albariño | 2017',
+		'Its depth of flavor plays off the aromas of pear, honeysuckle, and white pepper.',
+		'8$'
+	);
+	menuItemFactory(
+		'Wine',
+		'Hermann J. Wiemer Dry Riesling | 2019',
+		'The nose on this wine is full of floral, honey, and citrus notes that will awaken your senses.',
+		'9$'
+	);
 
 	subMenuFactory('Cocktails');
-	menuItemFactory('Cocktails', 'Chianti', 'Red wine from Tuscany', '7€');
-	menuItemFactory('Cocktails', 'Chianti', 'Red wine from Tuscany', '7€');
-	menuItemFactory('Cocktails', 'Chianti', 'Red wine from Tuscany', '7€');
-	menuItemFactory('Cocktails', 'Chianti', 'Red wine from Tuscany', '7€');
+	menuItemFactory(
+		'Cocktails',
+		'Jungle Bird',
+		'It doesn’t get more classic than the Jungle Bird, which was reportedly invented in Kuala Lumpur, Malaysia, circa 1978. ',
+		'14$'
+	);
+	menuItemFactory(
+		'Cocktails',
+		'Manhattan',
+		'Spicy rye, sweet vermouth, and two dashes of Angostura, stirred, strained, and garnished with a brandied cherry can make you feel like a true class act.',
+		'12$'
+	);
+	menuItemFactory(
+		'Cocktails',
+		'Moscow Mule',
+		'This famous mug-dwelling drink contains ginger, vodka, lime, and soda.',
+		'11$'
+	);
+	menuItemFactory(
+		'Cocktails',
+		'Penicillin',
+		'Nothing cures the weary winter drinker like a Penicillin, made with blended Scotch, smoky Islay Scotch, lemon juice, and honey ginger simple syrup.',
+		'11$'
+	);
 
 	subMenuFactory('Beers');
-	menuItemFactory('Beers', 'Chianti', 'Red wine from Tuscany', '7€');
-	menuItemFactory('Beers', 'Chianti', 'Red wine from Tuscany', '7€');
-	menuItemFactory('Beers', 'Chianti', 'Red wine from Tuscany', '7€');
-	menuItemFactory('Beers', 'Chianti', 'Red wine from Tuscany', '7€');
+	menuItemFactory(
+		'Beers',
+		'Yazoo Dos Perros Brown Ale',
+		"Dos Perros nails the brown ale's nutty malt character with a touch of chocolate, but lightens things up as Mexican brewers frequently do with flaked maize for a perfect balance.",
+		'8$'
+	);
+	menuItemFactory(
+		'Beers',
+		'Guinness Draught Stout',
+		'Guinness Draught Stout wrote the book on stouts, laying the groundwork for smooth and roasty dark beers with dreamy, creamy foam.',
+		'10$'
+	);
+	menuItemFactory(
+		'Beers',
+		'Köstritzer Schwarzbier',
+		'A schwarzbier is a traditional German style that combines the easy-drinking nature of a lager with the complex flavor profile of a porter or stout.',
+		'9$'
+	);
+	menuItemFactory(
+		'Beers',
+		'Chimay Grande Reserve',
+		'The Grande Reserve is a Belgian Strong Ale, which boasts a bouquet of caramel, toast, plum, fig, raisin, pepper, and perfume notes with a boozy warmth.',
+		'12$'
+	);
 }
 
 function menuItemFactory(subMenu, item, description, price) {

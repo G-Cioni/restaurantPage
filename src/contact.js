@@ -1,8 +1,11 @@
 import { htmlSkeleton } from './htmlSkeleton';
 import { clearHtml } from './clearHtml';
+// import map from './contact.jpg';
+
 export function createContact() {
 	clearHtml();
 	htmlSkeleton();
+
 	const main = document.querySelector('main');
 	const title = document.createElement('h1');
 	title.textContent = 'Contact us';
