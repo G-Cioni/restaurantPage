@@ -21,22 +21,30 @@
 export function createHome() {
 	const main = document.querySelector('main');
 
-	const welcome = document.createElement('h2');
+	const welcome = document.createElement('h3');
 	welcome.id = 'welcome';
 	welcome.textContent = 'Welcome to';
 	main.appendChild(welcome);
 
 	const restaurantName = document.createElement('h1');
-	restaurantName.textContent = 'Restaurant Name';
+	restaurantName.textContent = 'ĐЯ1NK$';
 	main.appendChild(restaurantName);
+
+	const open = document.createElement('div');
+	open.id = 'open';
+	main.appendChild(open);
+
+	const openHours = document.createElement('h4');
+	open.textContent = 'Opening Hours';
+	open.appendChild(openHours);
 
 	const hours1 = document.createElement('h3');
 	hours1.textContent = 'Mon - Fri: 19:00 - 23:00';
-	main.appendChild(hours1);
+	open.appendChild(hours1);
 
 	const hours2 = document.createElement('h3');
 	hours2.textContent = 'Sat - Sun: 13:00 - 24:00';
-	main.appendChild(hours2);
+	open.appendChild(hours2);
 
 	const paragraph = document.createElement('p');
 	paragraph.textContent =
