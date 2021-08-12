@@ -117,8 +117,9 @@ footer {
 /* Menu Page */
 
 .menu-title {
-	margin-top: 0;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+	margin: 0.5em auto 0 auto;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.418);
+	width: max-content;
 }
 .menu-card {
 	padding: 1em;
@@ -158,7 +159,7 @@ footer {
 	}
 }
 @media screen and (max-width: 525px) {
-	main {
+	#content {
 		font-size: smaller;
 	}
 	h2 {
