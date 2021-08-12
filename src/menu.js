@@ -3,6 +3,8 @@ import { clearHtml } from './clearHtml';
 export function createMenu() {
 	clearHtml();
 	htmlSkeleton();
+	const footer = document.querySelector('footer');
+	footer.style.marginTop = '3em';
 	const main = document.querySelector('main');
 	const menu = document.createElement('h1');
 	menu.textContent = 'Menu';

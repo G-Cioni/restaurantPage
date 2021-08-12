@@ -28,6 +28,9 @@ h1 {
 	font-size: 2.5em;
 }
 
+h2 {
+	font-size: xx-large;
+}
 p {
 	min-width: 15em;
 	max-width: 25em;
@@ -113,6 +116,10 @@ footer {
 
 /* Menu Page */
 
+.menu-title {
+	margin-top: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+}
 .menu-card {
 	padding: 1em;
 	width: 15em;
@@ -131,4 +138,30 @@ footer {
 .list {
 	display: grid;
 	grid-template-columns: auto auto;
+}
+
+@media screen and (max-height: 865px) {
+	footer {
+		margin-top: 3em;
+	}
+}
+@media screen and (max-width: 865px) {
+	.list {
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.menu-card {
+		padding: 0.7em;
+	}
+	.menu-title {
+		margin-bottom: 0.3em;
+	}
+}
+@media screen and (max-width: 525px) {
+	main {
+		font-size: smaller;
+	}
+	h2 {
+		font-size: x-large;
+	}
 }
