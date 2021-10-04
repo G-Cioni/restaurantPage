@@ -1,3 +1,2 @@
 # restaurantPage
-My first project working with webpack
-https://gianluca-cioni.github.io/restaurantPage/
+https://gianlucacioni.github.io/restaurantPage/
