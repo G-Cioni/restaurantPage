@@ -1,2 +1,2 @@
 # restaurantPage
-https://gianlucacioni.github.io/restaurantPage/
+https://g-cioni.github.io/restaurantPage/
